@@ -1,0 +1,7 @@
+{
+    "log_responces": true,
+    "log_dataresponces": false,
+    "threads": 10,
+    "proxys": false,
+    "proxyinfo": "exampleusername:examplepassword@rotatingexample.com"
+}
