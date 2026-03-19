@@ -1,5 +1,6 @@
 # url-bruteforcer
-enter your url eg helloworld.com bruteforcer will try helloword.com/admin.html and stuff like that and send u responce codes and data.
-There are linux tools for this but i think a unversal python script thats also much more customizeable is way cooler!
+Enter your URL (e.g., helloworld.com). The bruteforcer will try paths like helloworld.com/admin.html and similar endpoints, then return response codes and data.
 
-any errors/issues down the road will not be updated fix it yourself! will not update this package when python updates
+There are Linux tools for this, but I think a universal Python script that’s also much more customizable is way cooler.
+
+Any errors or issues down the road will not be fixed—please troubleshoot them yourself. This package will not be updated to support future Python versions.
