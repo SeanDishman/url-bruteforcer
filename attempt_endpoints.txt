@@ -1,6 +1,5 @@
 # You can add more if you want or just ask chatgpt to write more, the limit of this is your creativity.
 
-
 # ── Authentication ────────────────────────────────────────────────────────────
 login
 login.php
@@ -28,7 +27,6 @@ verify-email
 two-factor
 2fa
 mfa
-
 # ── Admin Panels ──────────────────────────────────────────────────────────────
 admin
 admin/login
@@ -50,7 +48,6 @@ root
 backend
 back-end
 webmaster
-
 # ── WordPress ─────────────────────────────────────────────────────────────────
 wp-admin
 wp-admin/
@@ -62,7 +59,6 @@ wp-includes
 xmlrpc.php
 wp-config.php
 wp-cron.php
-
 # ── APIs ──────────────────────────────────────────────────────────────────────
 api
 api/v1
@@ -89,7 +85,6 @@ graphiql
 rest
 rest/v1
 rest/api
-
 # ── Config & Environment ──────────────────────────────────────────────────────
 .env
 .env.local
@@ -111,7 +106,6 @@ web.config
 app.config
 database.yml
 secrets.json
-
 # ── Sensitive Files ───────────────────────────────────────────────────────────
 robots.txt
 sitemap.xml
@@ -132,7 +126,6 @@ old
 old.zip
 archive
 archive.zip
-
 # ── Server & Debug Info ───────────────────────────────────────────────────────
 phpinfo.php
 info.php
@@ -156,7 +149,6 @@ readme
 README.md
 CHANGELOG.md
 LICENSE
-
 # ── User & Account ────────────────────────────────────────────────────────────
 account
 account/settings
@@ -174,7 +166,6 @@ billing
 subscription
 payment
 invoices
-
 # ── Uploads & Media ───────────────────────────────────────────────────────────
 uploads
 upload
@@ -189,7 +180,6 @@ static
 cdn
 downloads
 download
-
 # ── Dev & Staging Leftovers ───────────────────────────────────────────────────
 dev
 development
@@ -206,7 +196,6 @@ internal
 private
 hidden
 secret
-
 # ── Enhanced Login & Auth Panels (expanded + creative) ───────────────────────────────
 auth/login
 auth/signin
@@ -270,7 +259,6 @@ challenge
 webauthn
 passkey
 biometric
-
 # ── API Login & Auth Endpoints (expanded) ────────────────────────────────────────────
 api/auth/login
 api/auth/signin
@@ -308,13 +296,10 @@ api/current_user
 api/whoami
 graphql/auth
 graphiql/auth
-
 # ── OAuth / OpenID / SSO Specific ────────────────────────────────────────────────────
 oauth2/authorize
-oauth2/token
 oauth2/revoke
 oauth2/introspect
-oauth/authorize
 oauth/token
 oidc/authorize
 oidc/token
@@ -323,7 +308,6 @@ openid/connect/token
 sso/login
 sso/callback
 saml/login
-saml/sso
 saml/metadata
 saml/acs
 federated/login
@@ -332,7 +316,6 @@ google/login
 facebook/login
 apple/login
 github/login
-
 # ── CMS-Specific Admin Panels (beyond WordPress) ─────────────────────────────────────
 admin.php
 administrator/index.php
@@ -352,11 +335,8 @@ moderator.php
 staff/login
 control/index
 joomla/administrator
-administrator/index.php
 administrator/
 drupal/user/login
-user/login
-user
 admin/config
 magento/admin
 admin_*
@@ -378,7 +358,6 @@ statamic/cp
 pimcore/admin
 silverstripe/admin
 craft/admin/login
-
 # ── Creative / Obfuscated / Dev Leftovers Admin ──────────────────────────────────────
 adm
 admpanel
