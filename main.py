@@ -1,7 +1,8 @@
-import json
+import random
 import os
 import sys
 import re
+import json
 import requests
 import signal
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -178,10 +179,22 @@ def flush_and_exit(total_urls: int = 0):
     sys.exit(0)
 
 
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 OPR/128.0.0.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Safari/605.1.15",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+]
+
+
 def check_endpoint(url: str, proxies, config: dict) -> dict:
     result = {"url": url, "status": None, "error": None, "body": None}
     try:
-        resp = requests.get(url, proxies=proxies, timeout=10, allow_redirects=True)
+        headers = {"User-Agent": random.choice(USER_AGENTS)}
+        resp = requests.get(url, headers=headers, proxies=proxies, timeout=10, allow_redirects=True)
         result["status"] = resp.status_code
         if config.get("log_dataresponces") and resp.status_code == 200:
             result["body"] = resp.text
